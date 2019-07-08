@@ -1,5 +1,5 @@
 from app import db
-from app.models.user import User
+from app.models import User
 from flask import redirect, flash, url_for
 from flask_login import current_user, login_user, logout_user
 

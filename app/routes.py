@@ -1,5 +1,5 @@
 from app import app
-from app.interfaces import user
+from app import userInterface
 from flask import render_template, request, redirect, url_for
 from flask_login import current_user, login_required
 
@@ -17,8 +17,8 @@ def login():
         return render_template('login.html')
             
     form = request.form
-    return user.login(form['username'], form['password'])
+    return userInterface.login(form['username'], form['password'])
 
 @app.route('/logout')
 def logout():
-    return user.logout()
+    return userInterface.logout()
