@@ -24,8 +24,12 @@ It's designed to let you start building your app with a minimal amount of setup.
 ## Deployment
 
 This project is designed to be deployable with heroku immdiately.
-If you have the Heroku commandline tools installed, you can run the app with `heroku local`.
+If you have the Heroku commandline tools installed, you can run the app locally with `heroku local`.
 
+## Updating Python Dependencies
+
+Project dependencies can be updated using the [pip-review](https://github.com/jgonggrijp/pip-review) tool.
+This can be run with `pip-review --interactive`.
 
 ## Built With
 
